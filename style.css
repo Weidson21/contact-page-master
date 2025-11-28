@@ -100,4 +100,5 @@ button{
     height: 55px;
     position: relative;
     left: -.7em;
+    border: none;
 }
