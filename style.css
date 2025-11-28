@@ -8,7 +8,8 @@
     --cor-de-inputs: #111729;
     --button : #4036a3;
     --cor-section: #ffffff33;
-    --border-radius: 15px;
+    --border-radius-main: 15px;
+    --border-radius: 10px;
 }
 
 *{
@@ -26,79 +27,71 @@
     box-sizing: border-box;
 }
 
-html{
-    background-image: linear-gradient(to right, #4036a9, #b4436d);
+html {
+    background-image: linear-gradient(to right, #4036a3, #b4436d);
 }
 
-header  > h1 {
+header > h1{
+    color: #ffffff;
     text-align: center;
-    color: var(--cor-de-letra);
-    position: relative;
-    top: 30px;
-    padding: 0 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0.6em auto;
+    padding: 0 1.5em;
 }
 
 header > p{
+    color: #ffffff;
     text-align: center;
-    color: var(--cor-de-letra);
-    position: relative;
-    top: 48px;
-    padding: 0 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 1em;
+    margin: auto;
 }
 
 main > section{
-    background-color: var(--cor-section);
-    border-radius: var(--border-radius);
+    background-color: #ffffff33;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    max-width: 320px;
+    height: 606px;
+    border-radius: var(--border-radius-main);
+    overflow-x: auto;
+}
+
+main > section > label#nome, label#emaill, label#sizee,label#subjectt, label#messagee{
+    color: #ffffff;
+    margin: 0.8em 0.5em;
     position: relative;
-    top: 33px;
+    top: -0.3em;
+}
+
+main > section input#nome, input#email , select#size, select#subject{
+    margin-left: 0.5em;
     padding: 1em;
-    margin: 4em auto;
-    height: 580px;
-    width: 360px;
-}
-
-main > section > label {
-    color: var(--cor-de-letra);
-    text-align: left;
-}
-
-main > section > p {
-    text-align: center;
-    margin: 0.3em;
-}
-
-main > section > p > input, select{
-    font-family: var(--font);
-    width: 348px;
-    height: 45px;
+    width: 306px;
+    height: 3.4em;
     border-radius: var(--border-radius);
-    margin: auto;
-    position: relative;
-    left: -1em;
     border: none;
+    position: relative;
+    top: -1em;
 }
 
-textarea{
-    width: 348px;
-    height: 150px;
+main > section > p >textarea#message{
+    margin-left: 0.5em;
+    width: 306px;
+    height: 8.5em;
+    position: relative;
+    top: -1em;
     border-radius: var(--border-radius);
-    margin: auto;
-    position: relative;
-    left: -1em;
-    border: none;
 }
 
-button{
+main > section > p > button{
     color: var(--button);
-    font-weight: bolder;
-    font-size: 1.2rem;
-    margin-top: 0.6em;
+    margin: 1.5em 0.5em;
+    width: 306px;
+    height: 50px;
     border-radius: var(--border-radius);
-    width: 348px;
-    height: 55px;
-    position: relative;
-    left: -.7em;
     border: none;
 }
