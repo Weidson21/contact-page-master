@@ -45,6 +45,8 @@ header > p{
     font-size: 1.2rem;
     padding: 1em;
     margin: auto;
+    position: relative;
+    top: -14px;
 }
 
 main > section{
@@ -58,6 +60,8 @@ main > section{
     height: 606px;
     border-radius: var(--border-radius-main);
     overflow-x: auto;
+    position: relative;
+    top: -15px;
 }
 
 main > section > label#nome, label#emaill, label#sizee,label#subjectt, label#messagee{
