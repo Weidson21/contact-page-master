@@ -57,9 +57,9 @@ main > section{
     align-items: flex-start;
     margin: auto;
     max-width: 320px;
-    height: 606px;
+    height: 594px;
     border-radius: var(--border-radius-main);
-    overflow-y: hidden;
+    overflow: hidden;
     position: relative;
     top: -15px;
 }
@@ -75,7 +75,7 @@ main > section input#nome, input#email , select#size, select#subject{
     margin-left: 0.5em;
     padding: 1em;
     width: 306px;
-    height: 3.4em;
+    height: 3em;
     border-radius: var(--border-radius);
     border: none;
     position: relative;
@@ -85,7 +85,7 @@ main > section input#nome, input#email , select#size, select#subject{
 main > section > p >textarea#message{
     margin-left: 0.5em;
     width: 306px;
-    height: 8.5em;
+    height: 8em;
     position: relative;
     top: -1em;
     border-radius: var(--border-radius);
