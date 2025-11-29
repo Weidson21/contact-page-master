@@ -57,7 +57,7 @@ main > section{
     align-items: flex-start;
     margin: auto;
     max-width: 320px;
-    height: 594px;
+    height: auto;
     border-radius: var(--border-radius-main);
     overflow: hidden;
     position: relative;
