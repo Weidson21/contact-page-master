@@ -73,7 +73,7 @@ main > section > label#nome, label#emaill, label#sizee,label#subjectt, label#mes
 
 main > section input#nome, input#email , select#size, select#subject{
     margin-left: 0.5em;
-    padding: 1em;
+    padding: 0.4em;
     width: 306px;
     height: 3.6em;
     border-radius: var(--border-radius);
