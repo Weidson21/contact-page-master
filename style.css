@@ -49,7 +49,7 @@ header > p{
     top: -14px;
 }
 
-main > section{
+main > section > form {
     background-color: #ffffff33;
     display: flex;
     flex-direction: column;
@@ -64,14 +64,14 @@ main > section{
     top: -15px;
 }
 
-main > section > label#nome, label#emaill, label#sizee,label#subjectt, label#messagee{
+main > section > form > label#nome, label#emaill, label#sizee,label#subjectt, label#messagee{
     color: #ffffff;
     margin: 0.8em 0.5em;
     position: relative;
     top: -0.3em;
 }
 
-main > section input#nome, input#email , select#size, select#subject{
+main > section > form input#nome, input#email , select#size, select#subject{
     margin-left: 0.5em;
     padding: 0.4em;
     width: 306px;
@@ -82,7 +82,7 @@ main > section input#nome, input#email , select#size, select#subject{
     top: -1em;
 }
 
-main > section > p >textarea#message{
+main > section > form > p >textarea#message{
     margin-left: 0.5em;
     width: 306px;
     height: 8em;
@@ -91,11 +91,16 @@ main > section > p >textarea#message{
     border-radius: var(--border-radius);
 }
 
-main > section > p > button{
+main > section > form > p > button{
     color: var(--button);
     margin: 1.5em 0.5em;
     width: 306px;
     height: 50px;
     border-radius: var(--border-radius);
     border: none;
+}
+
+main > section > form > p > button:hover{
+    color: #ffffff;
+    background-color: #4036a3;
 }
