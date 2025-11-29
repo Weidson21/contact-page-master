@@ -59,7 +59,7 @@ main > section{
     max-width: 320px;
     height: 606px;
     border-radius: var(--border-radius-main);
-    overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     top: -15px;
 }
