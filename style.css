@@ -75,7 +75,7 @@ main > section input#nome, input#email , select#size, select#subject{
     margin-left: 0.5em;
     padding: 1em;
     width: 306px;
-    height: 3em;
+    height: 3.6em;
     border-radius: var(--border-radius);
     border: none;
     position: relative;
