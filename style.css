@@ -76,6 +76,7 @@ input#nome, input#email, select#size, select#subject{
 textarea#message{
     height: 150px;
     width: 306px;
+    padding-top: 20px;
     border-radius: var(--border-radius);
 }
 
@@ -85,4 +86,9 @@ p > button{
     width: 306px;
     border-radius: var(--border-radius);
     border: none;
+}
+
+p> button:hover{
+    color: #ffffff;
+    background-color: var(--button);
 }
