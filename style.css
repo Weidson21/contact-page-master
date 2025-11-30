@@ -51,56 +51,38 @@ header > p{
 
 main > section > form {
     background-color: #ffffff33;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
     margin: auto;
+    padding: 5px;
     max-width: 320px;
     height: auto;
     border-radius: var(--border-radius-main);
-    overflow: hidden;
-    position: relative;
-    top: -15px;
 }
 
-main > section > form > label#nome, label#emaill, label#sizee,label#subjectt, label#messagee{
+label#nome , label#emaill, label#sizee, label#subjectt, label#messagee{
     color: #ffffff;
-    margin: 0.8em 0.5em;
-    position: relative;
-    top: -0.3em;
 }
 
-main > section > form input#nome, input#email , select#size, select#subject{
-    margin-left: 0.5em;
-    padding: 0.4em;
-    width: 306px;
-    height: 3.6em;
-    border-radius: var(--border-radius);
-    border: none;
-    position: relative;
-    top: -1em;
-}
-
-main > section > form > p >textarea#message{
-    margin-left: 0.5em;
-    width: 306px;
-    height: 8em;
-    position: relative;
-    top: -1em;
-    border-radius: var(--border-radius);
-}
-
-main > section > form > p > button{
-    color: var(--button);
-    margin: 1.5em 0.5em;
-    width: 306px;
+input#nome, input#email, select#size, select#subject{
+    padding: 10px;
     height: 50px;
+    width: 306px;
     border-radius: var(--border-radius);
     border: none;
 }
 
-main > section > form > p > button:hover{
-    color: #ffffff;
-    background-color: #4036a3;
+textarea#message{
+    height: 150px;
+    width: 306px;
+    border-radius: var(--border-radius);
+}
+
+p > button{
+    color: var(--button);
+    height: 50px;
+    width: 306px;
+    border-radius: var(--border-radius);
+    border: none;
 }
