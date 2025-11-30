@@ -84,6 +84,7 @@ p > button{
     color: var(--button);
     height: 50px;
     width: 306px;
+    margin-bottom: 15px;
     border-radius: var(--border-radius);
     border: none;
 }
