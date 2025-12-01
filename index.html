@@ -14,32 +14,40 @@
   </header>
   <main>
     <section>
-      <form action="" method="get">
-        <label for="nome" id="nome">Name</label>
-        <p><input type="text" name="nome" id="nome" placeholder="   Ethan Joshon" required></p>
-        <label for="email" class="label" id="emaill">Company email</label>
-        <p><input type="email" name="email" id="email" placeholder="   ethan@joshon.com"></p>
-        <label for="size" class="label" id="sizee">Company Size</label>
-        <p>
-          <select name="size" id="size" class="label">
-            <option value="employees">50 - 100 employees</option>
+      <form action="" method="post">
+      <div>
+          <label for="nome">Name</label>
+          <input type="text" name="nome" id="nome" placeholder="   Ethan Joshon" required>
+      </div>
+
+      <div>
+          <label for="email">Company email</label>
+          <input type="email" name="email" id="email" placeholder="   ethan@joshon.com" required>
+      </div>
+
+      <div>
+          <label for="size">Company Size</label>
+          <select name="size" id="size" >
+          <option value="employees">50 - 100 employees</option>
           </select>
-        </p>
-          <label for="subject" class="label" id="subjectt">Subject</label>
-        <p>
+      </div>
+
+      <div>
+          <label for="subject">Subject</label>
           <select name="subject" id="subject">
-            <option value="Subject">Building landing page</option>
+          <option value="Subject">Building landing page</option>
           </select>
-        </p>
-        <label for="message" id="messagee">Message</label>
-              <p>
-        <textarea name="message" id="message">
-          50 - 100 employees
-        </textarea>
-              </p>
-              <p>
+      </div>
+
+      <div>
+          <label for="message">Message</label>
+          <textarea name="message"id="message">50 - 100 employees</textarea>
+      </div>
+
+      <div>
         <button type="submit">Contact Sales</button>
-              </p>
+      </div>
+
         </form>
     </section>
   </main>

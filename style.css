@@ -1,4 +1,4 @@
-/*Estilização para dispositivos mobile*/
+/*Media Query para dispositivos mobile com width baixos e altos*/
 
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -17,14 +17,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-*::after{
-    box-sizing: border-box;
-}
-
-*::before{
-    box-sizing: border-box;
 }
 
 html {
@@ -46,7 +38,7 @@ header > p{
     padding: 1em;
     margin: auto;
     position: relative;
-    top: -14px;
+    top: -20px;
 }
 
 main > section > form {
@@ -56,40 +48,180 @@ main > section > form {
     gap: 6px;
     margin: auto;
     padding: 5px;
+    width: 100%;
     max-width: 320px;
     height: auto;
     border-radius: var(--border-radius-main);
+    position: relative;
+    top: -20px;
 }
 
-label#nome , label#emaill, label#sizee, label#subjectt, label#messagee{
+label{
     color: #ffffff;
 }
 
 input#nome, input#email, select#size, select#subject{
     padding: 10px;
-    height: 50px;
-    width: 306px;
+    min-height: 50px;
+    width: 100%;
+    max-width: 100%;
     border-radius: var(--border-radius);
     border: none;
 }
 
 textarea#message{
     height: 150px;
-    width: 306px;
+    width: 100%;
+    max-width: 100%;
     padding-top: 20px;
     border-radius: var(--border-radius);
 }
 
-p > button{
+button{
     color: var(--button);
     height: 50px;
-    width: 306px;
+    width: 100%;
+    max-width: 100%;
     margin-bottom: 15px;
     border-radius: var(--border-radius);
     border: none;
 }
 
-p> button:hover{
+button:hover{
     color: #ffffff;
     background-color: var(--button);
+}
+
+/* Media query para celulares padrões*/
+@media screen and (min-width: 360px) and (max-width: 389px){
+    header > h1{
+        font-size: 1.5rem;
+    }
+
+    header > p{
+        font-size: 1rem;
+    }
+
+    input#nome, input#email, select#size, select#subject{
+    padding: 10px;
+    min-height: 30px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    border: none;
+    }
+
+    textarea#message{
+        min-height: 60px;
+    }
+
+    button{
+        min-height: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    header > h1 {
+        font-size: 4rem;
+    }
+
+    header > p{
+        font-size: 2em;
+    }
+
+    main > section > form{
+        padding: 10px;
+        width: 100%;
+        max-width: 740px;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 20px;
+    }
+
+    form div:nth-child(5),
+    form div:nth-child(6){
+        grid-column: 1 / -1;
+    }
+
+    label{
+        font-size: 1.3rem;
+    }
+    input#nome, input#email, select#size, select#subject{
+    padding: 10px;
+    min-height: 70px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    border: none;
+    grid-column: span 1;
+    }
+
+    textarea#message{
+        min-height: 200px;
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    button{
+        font-size: 1.5em;
+        min-height: 75px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and(min-height: 600px){
+    header > h1{
+        font-size: 0.8rem;
+    }
+
+    header > p{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-height: 600px){
+    header > h1{
+        font-size: 2.1rem;
+
+    }
+    header > p{
+        font-size: 1.2rem;
+    }
+
+    label{
+        font-size: 1rem;
+    }
+    input#nome, input#email, select#size, select#subject{
+        min-height: 30px;
+    }
+
+    textarea#message{
+        min-height: 125px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-height: 800px){
+    header > h1{
+        font-size: 2rem;
+        margin-right: 72px;
+    }
+
+    header > p{
+    font-size: 1.4rem;
+    padding: 50px;
+    margin-right: 72px;
+    }
+
+    main section form{
+    margin-right: 310px;
+    }
+
+    input#nome, input#email, select#size, select#subject{
+        min-height: 60px;
+    }
+
+    textarea#message{
+        min-height: 100px;
+    }
 }
